@@ -1,0 +1,217 @@
+section banner .swiper-wrapper .swiper-slide .banner_message{
+  align-items: center;
+}
+section banner .banner .swiper-slide .slide_list .banner_message .banner_message_text{
+  margin-bottom: 73px;
+}
+section banner .banner .swiper-slide .slide_list .banner_message .banner_message_moreText{
+  max-width: 760px;
+  font-size:14px;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  margin: 0 auto 102px;
+}
+section banner .banner .swiper-slide .slide_list .banner_message .banner_message_moreText span{
+  display: block;
+  text-align: center;
+}
+section banner .banner .swiper-slide .slide_list .banner_message .banner_message_btn>div{
+  border: unset !important;
+}
+
+/* 第一板块 */
+section .section_plate.product_plate_one .plate_box{
+  max-width: 1092px;
+  margin: 0 auto;
+  font-family:Segoe UI, PingFangSC-Regular, sans-serif;
+  transition: all .3s;
+}
+section .section_plate.product_plate_one .plate_box .application_btn_box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  font-size:15px;
+  font-weight:400;
+  color:rgba(112,112,112, .6);
+  position: relative;
+}
+
+section .section_plate.product_plate_one .plate_box .application_btn_box .application_btn{
+  cursor: pointer;
+  width:118px;
+  height:118px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+section .section_plate.product_plate_one .plate_box .application_btn_box .application_btn .info_icon{
+  width: 46px;
+  height: 46px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .section_plate.product_plate_one .plate_box .application_btn_box .application_btn .info_icon>img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+}
+section .section_plate.product_plate_one .plate_box .application_btn_box .application_btn .info_icon>img:first-child{
+  opacity: 1;
+}
+section .section_plate.product_plate_one .plate_box .application_btn_box .application_btn .info_icon>img:last-child{
+  opacity: 0;
+}
+section .section_plate.product_plate_one .plate_box .application_btn_box .application_btn .info_title{
+  position: absolute;
+  bottom: -10px;
+}
+section .section_plate.product_plate_one .plate_box .application_btn_box .slider{
+  position: absolute;
+  transition: all .5s cubic-bezier(0.4, -0.3, 0.57, 1.38);
+  width:118px;
+  height:118px;
+  border: 1px solid rgba(255,255,255,1);
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+section .section_plate.product_plate_one .plate_box .application_btn_box .application_btn.btn_checked{
+  box-shadow:0 0 20px rgba(0,0,0,0.21);
+}
+section .section_plate.product_plate_one .plate_box .application_btn_box .application_btn.btn_checked .info_title{
+  display: none;
+}
+section .section_plate.product_plate_one .plate_box .application_btn_box .application_btn.btn_checked .info_icon>img:first-child{
+  opacity: 0;
+}
+section .section_plate.product_plate_one .plate_box .application_btn_box .application_btn.btn_checked .info_icon>img:last-child{
+  opacity: 1;
+}
+
+
+section .section_plate.product_plate_one .plate_box .application_info_box{
+  min-height: 265px;
+}
+section .section_plate.product_plate_one .plate_box .application_info_box .application_info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .section_plate.product_plate_one .plate_box .application_info_box .application_info .info_image{
+  max-width: 472px;
+  height: 265px;
+  margin-right: 10px;
+}
+section .section_plate.product_plate_one .plate_box .application_info_box .application_info .info_image>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .section_plate.product_plate_one .plate_box .application_info_box .application_info .info_message{
+  font-family:Segoe UI, PingFangSC-Regular, sans-serif;
+  max-width: 507px;
+}
+section .section_plate.product_plate_one .plate_box .application_info_box .application_info .info_message .info_message_title{
+  font-size:20px;
+  font-weight:900;
+  color:rgba(0,0,0,.9);
+  margin-bottom: 14px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+section .section_plate.product_plate_one .plate_box .application_info_box .application_info .info_message .info_message_text{
+  font-size:14px;
+  font-weight:400;
+  color:rgba(112,112,112,1);
+  display: -webkit-box;
+  overflow: hidden;
+  line-height:25px;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+section .section_plate.product_plate_one .plate_box .application_info_box .application_info.display_b{
+  display: flex;
+}
+section .section_plate.product_plate_one .plate_box .application_info_box .application_info.display_n{
+  display: none;
+}
+
+/* 第二板块 */
+section .section_plate.product_plate_two{
+  position: relative;
+}
+section .section_plate.product_plate_two .plate_title{
+  margin-bottom: 120px;
+}
+section .section_plate.product_plate_two::before{
+  content: '';
+  display: block;
+  height:604px;
+  width: 50vw;
+  min-width: 640px;
+  background:rgba(61,73,89,1);
+  position: absolute;
+  left: 0;
+  top: 241px;
+}
+section .section_plate.product_plate_two .plate_box.index_hover_plate{
+  padding: 47px 24px;
+  background: #fff;
+  position: relative;
+  max-width: 1200px;
+}
+section .section_plate.product_plate_two .plate_box.index_hover_plate .index_hover_box:hover{
+  background:rgba(255,255,255,1);
+  box-shadow:0 11px 20px rgba(0,0,0,0.2)
+}
+
+section .section_plate.product_plate_two .advantage_message{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+section .section_plate.product_plate_two .advantage_message .advantage_message_text{
+  margin-right: 36px;
+  font-family:Segoe UI, PingFangSC-Regular, sans-serif;
+  text-transform:uppercase
+}
+section .section_plate.product_plate_two .advantage_message .advantage_message_text p:first-child{
+  font-size:77px;
+  font-weight:bold;
+  color:rgba(255,255,255,.4);
+}
+section .section_plate.product_plate_two .advantage_message .advantage_message_text p:last-child{
+  font-size:92px;
+  font-weight:bold;
+  color:rgba(1,76,170,.21);
+  position: relative;
+  top: -20px;
+}
+section .section_plate.product_plate_two .advantage_message .advantage_message_image{
+  max-width: 702px;
+  height: 371px;
+}
+section .section_plate.product_plate_two .advantage_message .advantage_message_image>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* 第三板块 */
+section .section_plate.product_plate_three{
+  background:rgba(231,240,245,1);
+}

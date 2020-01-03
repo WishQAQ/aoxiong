@@ -39,9 +39,16 @@ input:-webkit-autofill {
   color: #000;
 }
 
-
 /* 导航栏样式 */
 header{
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  min-width: 960px;
+  transition: all .3s;
+}
+header.header_background{
   background:rgba(9,80,169,1);
 }
 header .header_box{
@@ -103,21 +110,85 @@ section{
   /*overflow-y: auto;*/
   /*overflow-x: hidden;*/
 }
-section .index_plate .plate_title{
+section .section_plate{
+  padding: 100px 10px 106px;
+}
+section .section_plate .plate_title{
   margin-bottom: 43px;
   text-align: center;
   font-family: Segoe UI, PingFangSC-Regular, sans-serif;
 }
-section .index_plate .plate_title>p{
+section .section_plate .plate_title>p{
   font-size:26px;
   font-weight:900;
   color:rgba(10,10,10,1);
   margin-bottom: 8px;
 }
-section .index_plate .plate_title>span{
+section .section_plate .plate_title>span{
   font-size:16px;
   font-weight:400;
   color:rgba(0,0,0,.6);
+}
+
+
+/* hover板块样式设置 */
+section .section_plate .plate_box.index_hover_plate{
+  max-width: 1069px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .section_plate .plate_box.index_hover_plate .index_hover_box{
+  width:206px;
+  height:256px;
+  cursor: pointer;
+  border:1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family:Segoe UI, PingFangSC-Regular, sans-serif;
+  color:rgba(112,112,112,1);
+  transition: all .3s;
+}
+section .section_plate .plate_box.index_hover_plate .index_hover_box .icon{
+  width: 56px;
+  height: 56px;
+  margin-bottom: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+section .section_plate .plate_box.index_hover_plate .index_hover_box .icon>img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+}
+section .section_plate .plate_box.index_hover_plate .index_hover_box>p{
+  font-size:18px;
+  font-weight:900;
+  margin-bottom: 14px;
+}
+section .section_plate .plate_box.index_hover_plate .index_hover_box>span{
+  display: inline-flex;
+  max-width: 140px;
+  margin: 0 auto;
+  font-size:14px;
+}
+section banner .banner .swiper-slide .slide_list .banner_message .banner_message_text{
+  margin-bottom: 128px;
+}
+section banner .banner .swiper-slide .slide_list .banner_message .banner_message_btn>div:not(:last-child){
+  margin-right: 62px;
+}
+section banner .banner .swiper-slide .slide_list .banner_message .banner_message_btn>div:first-child{
+  background:rgba(255,168,46,1);
+}
+section banner .banner .swiper-slide .slide_list .banner_message .banner_message_btn>div:last-child{
+  border:1px solid rgba(255,255,255,1);
 }
 
 
@@ -128,8 +199,9 @@ footer{
   font-family:Segoe UI, PingFangSC-Regular, sans-serif;
 }
 footer .footer_box{
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 /* 页脚目录 */

@@ -1,0 +1,84 @@
+section banner .banner{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family:Segoe UI, PingFangSC-Regular, sans-serif;
+}
+section banner .banner .swiper-slide{
+  position: relative;
+  height: 100%;
+}
+section banner .banner .swiper-slide .slide_list{
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+section banner .banner .swiper-slide .slide_list .banner_background{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+section banner .banner .swiper-slide .slide_list .banner_background>img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section banner .banner .swiper-slide .slide_list .banner_message{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+section banner .banner .swiper-slide .slide_list .banner_message .banner_message_text>div{
+  font-size:44px;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+  margin-bottom: 14px;
+}
+section banner .banner .swiper-slide .slide_list .banner_message .banner_message_text>p{
+  font-size:31px;
+  font-weight:bold;
+  color:rgba(255,255,255,1)
+}
+section banner .banner .swiper-slide .slide_list .banner_message .banner_message_btn{
+  display: flex;
+  align-items: center;
+}
+section banner .banner .swiper-slide .slide_list .banner_message .banner_message_btn>div{
+  width:164px;
+  height:44px;
+  box-shadow:0 3px 6px rgba(0,0,0,0.16);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size:15px;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  cursor: pointer;
+}
+
+
+/* 分页器 */
+section banner .banner .swiper-pagination{
+  bottom: 34px;
+}
+section banner .banner .swiper-pagination .swiper-pagination-bullet{
+  width:16px;
+  height:4px;
+  background:rgba(255,255,255,1);
+  margin: 0 8px;
+  border-radius: unset;
+}
+section banner .banner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background:rgba(255,168,46,1);
+}

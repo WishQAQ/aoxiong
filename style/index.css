@@ -1,129 +1,492 @@
-/* hover板块样式设置 */
-section .index_plate{
-  padding: 100px 0 106px;
-}
-section .index_plate .plate_box.index_hover_plate{
-  max-width: 1069px;
-  padding: 0 10px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-section .index_plate .plate_box.index_hover_plate .index_hover_box{
-  width:206px;
-  height:256px;
-  cursor: pointer;
-  border:1px solid transparent;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family:Segoe UI, PingFangSC-Regular, sans-serif;
-  color:rgba(112,112,112,1);
-  transition: all .2s;
-}
-section .index_plate .plate_box.index_hover_plate .index_hover_box .icon{
-  width: 56px;
-  height: 56px;
-  margin-bottom: 29px;
-}
-section .index_plate .plate_box.index_hover_plate .index_hover_box .icon>img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-section .index_plate .plate_box.index_hover_plate .index_hover_box>p{
-  font-size:18px;
-  font-weight:900;
-  margin-bottom: 14px;
-}
-section .index_plate .plate_box.index_hover_plate .index_hover_box>span{
-  display: inline-flex;
-  max-width: 140px;
-  margin: 0 auto;
-  font-size:14px;
-}
-
-
 /* 第一板块 */
-section .index_plate.index_plate_one .plate_box.index_hover_plate .index_hover_box{
+section .section_plate.index_plate_one .plate_box.index_hover_plate .index_hover_box{
   background:rgba(255,255,255,1);
   box-shadow:0 3px 6px rgba(0,0,0,0.16);
 }
-section .index_plate.index_plate_one .plate_box.index_hover_plate .index_hover_box:hover{
+section .section_plate.index_plate_one .plate_box.index_hover_plate .index_hover_box .icon>img:first-child{
+  opacity: 1;
+}
+section .section_plate.index_plate_one .plate_box.index_hover_plate .index_hover_box .icon>img:last-child{
+  opacity: 0;
+}
+section .section_plate.index_plate_one .plate_box.index_hover_plate .index_hover_box:hover{
   background:rgba(1,76,170,1);
   border:1px solid rgba(1,76,170,1);
   box-shadow:6px 12px 4px rgba(0,0,0,0.2);
   color:rgba(255,255,255,1);
 }
+section .section_plate.index_plate_one .plate_box.index_hover_plate .index_hover_box:hover .icon>img:first-child{
+  opacity: 0;
+}
+section .section_plate.index_plate_one .plate_box.index_hover_plate .index_hover_box:hover .icon>img:last-child{
+  opacity: 1;
+}
 
 /* 第二板块 */
-section .index_plate.index_plate_two{
+section .section_plate.index_plate_two{
   background: #E7F0F5;
 }
-section .index_plate.index_plate_two .plate_box.index_hover_plate .index_hover_box:hover{
+section .section_plate.index_plate_two .plate_box.index_hover_plate .index_hover_box:hover{
   background:rgba(255,255,255,1);
   box-shadow:0 11px 20px rgba(0,0,0,0.2)
 }
 
 /* 第三板块 */
-section .index_plate.index_plate_three{
-
+section .section_plate.index_plate_three{
+  position: relative;
+}
+section .section_plate.index_plate_three .plate_box{
+  height: 422px;
+  max-width: 1220px;
+  margin: 0 auto;
+  position: relative;
 }
 
+section .section_plate.index_plate_three .plate_box .swiper-container{
+  width: 100%;
+  height: 100%;
+}
+section .section_plate.index_plate_three .plate_box .swiper-slide{
+  position: relative;
+  padding: 0 90px;
+}
+section .section_plate.index_plate_three .plate_box .swiper-slide .slide_list{
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  height: 360px;
+}
+section .section_plate.index_plate_three .plate_box .swiper-slide .slide_list .item_image{
+  width: 749px;
+  height: 360px;
+  position: absolute;
+}
+section .section_plate.index_plate_three .plate_box .swiper-slide .slide_list .item_image>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .section_plate.index_plate_three .plate_box .swiper-slide .slide_list .item_message{
+  width:373px;
+  height:290px;
+  background:rgba(255,255,255,1);
+  box-shadow:0 9px 23px rgba(0,0,0,0.19);
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+  margin-right: 30px;
+  padding-left: 47px;
+  padding-top: 41px;
+  padding-right: 18px;
+}
+
+section .section_plate.index_plate_three .plate_box .swiper-slide .slide_list .item_message::before{
+  content: '';
+  left: -23.5px;
+  display: block;
+  position: absolute;
+  width:47px;
+  height:8px;
+  background:rgba(1,76,170,1);
+  top: 50px;
+}
+section .section_plate.index_plate_three .plate_box .swiper-slide .slide_list .item_message .item_title{
+  font-size:18px;
+  font-weight:bold;
+  color:rgba(0,0,0,.9);
+  margin-bottom: 18px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+section .section_plate.index_plate_three .plate_box .swiper-slide .slide_list .item_message .item_text{
+  font-size:14px;
+  font-weight:400;
+  color:rgba(112,112,112,1);
+  min-height: 108px;
+  margin-bottom: 18px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+section .section_plate.index_plate_three .plate_box .swiper-slide .slide_list .item_message .item_btn{
+  font-size:14px;
+  font-weight:400;
+  color:rgba(0,0,0,.5);
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  text-transform:uppercase;
+}
+section .section_plate.index_plate_three .plate_box .swiper-slide .slide_list .item_message .item_btn::before{
+  content: '';
+  display: inline-flex;
+  background: url("../images/index_plate_three_btn.png") no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-right: 19px;
+}
+
+
+/* 切换按钮 */
+section .section_plate.index_plate_three .plate_box .swiper-container .swiper-button-next,
+section .section_plate.index_plate_three .plate_box .swiper-container .swiper-button-prev{
+  width: 63px;
+  height: 63px;
+  background: url("../images/index_carousel_btn.png") no-repeat center center;
+  background-size: contain;
+  margin-top: -63px;
+}
+section .section_plate.index_plate_three .plate_box .swiper-container .swiper-button-next::after,
+section .section_plate.index_plate_three .plate_box .swiper-container .swiper-button-prev::after{
+  content: ''
+}
+section .section_plate.index_plate_three .plate_box .swiper-container .swiper-button-next{
+  transform: rotate(180deg);
+}
+section .section_plate.index_plate_three .plate_box .swiper-container .swiper-pagination{
+  bottom: 0;
+}
+section .section_plate.index_plate_three .plate_box .swiper-container .swiper-pagination .swiper-pagination-bullet{
+  width:10px;
+  height:10px;
+  border:1px solid rgba(112,112,112,1);
+  background: transparent;
+}
+section .section_plate.index_plate_three .plate_box .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background:rgba(255,168,46,1);
+  border-color: rgba(255,168,46,1);
+}
+
+
 /* 第四板块 */
-section .index_plate.index_plate_four{
+section .section_plate.index_plate_four{
   background: url("../images/index_plate_four_background.png") center center;
   background-size: cover;
 }
-section .index_plate.index_plate_four .plate_title>p{
+section .section_plate.index_plate_four .plate_title{
+  margin-bottom: 74px;
+}
+section .section_plate.index_plate_four .plate_title>p{
   color:rgba(255,255,255,1);
 }
-section .index_plate.index_plate_four .plate_title>span{
+section .section_plate.index_plate_four .plate_title>span{
   color:rgba(255,255,255,.6);
 }
 
-/* 第五板块 */
-section .index_plate.index_plate_fives{
-
+section .section_plate.index_plate_four .plate_box{
+  max-width: 1092px;
+  margin: 0 auto;
+  font-family:Segoe UI, PingFangSC-Regular, sans-serif;
+  transition: all .3s;
+}
+section .section_plate.index_plate_four .plate_box .application_btn_box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  font-size:15px;
+  font-weight:400;
+  color:rgba(255,255,255,.6);
+  position: relative;
+}
+section .section_plate.index_plate_four .plate_box .application_btn_box .application_btn{
+  cursor: pointer;
+  width:118px;
+  height:118px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+section .section_plate.index_plate_four .plate_box .application_btn_box .application_btn .info_icon{
+  width: 46px;
+  height: 46px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .section_plate.index_plate_four .plate_box .application_btn_box .application_btn .info_icon>img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+}
+section .section_plate.index_plate_four .plate_box .application_btn_box .application_btn .info_icon>img:first-child{
+  opacity: 1;
+}
+section .section_plate.index_plate_four .plate_box .application_btn_box .application_btn .info_icon>img:last-child{
+  opacity: 0;
+}
+section .section_plate.index_plate_four .plate_box .application_btn_box .application_btn .info_title{
+  position: absolute;
+  bottom: -10px;
+}
+section .section_plate.index_plate_four .plate_box .application_btn_box .slider{
+  position: absolute;
+  transition: all .5s cubic-bezier(0.4, -0.3, 0.57, 1.38);
+  width:118px;
+  height:118px;
+  border: 1px solid rgba(255,255,255,1);
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+section .section_plate.index_plate_four .plate_box .application_btn_box .application_btn.btn_checked{
+  border-color: rgba(255,255,255,1);
+}
+section .section_plate.index_plate_four .plate_box .application_btn_box .application_btn.btn_checked .info_title{
+  display: none;
+}
+section .section_plate.index_plate_four .plate_box .application_btn_box .application_btn.btn_checked .info_icon>img:first-child{
+  opacity: 0;
+}
+section .section_plate.index_plate_four .plate_box .application_btn_box .application_btn.btn_checked .info_icon>img:last-child{
+  opacity: 1;
 }
 
+
+section .section_plate.index_plate_four .plate_box .application_info_box{
+  min-height: 265px;
+}
+section .section_plate.index_plate_four .plate_box .application_info_box .application_info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .section_plate.index_plate_four .plate_box .application_info_box .application_info .info_image{
+  max-width: 472px;
+  height: 265px;
+  margin-right: 10px;
+}
+section .section_plate.index_plate_four .plate_box .application_info_box .application_info .info_image>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .section_plate.index_plate_four .plate_box .application_info_box .application_info .info_message{
+  font-family:Segoe UI, PingFangSC-Regular, sans-serif;
+  max-width: 507px;
+}
+section .section_plate.index_plate_four .plate_box .application_info_box .application_info .info_message .info_message_title{
+  font-size:20px;
+  font-weight:900;
+  color:rgba(255,255,255,1);
+  margin-bottom: 14px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+section .section_plate.index_plate_four .plate_box .application_info_box .application_info .info_message .info_message_text{
+  font-size:14px;
+  font-weight:400;
+  color:rgba(238,238,238,1);
+  display: -webkit-box;
+  overflow: hidden;
+  line-height:25px;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+section .section_plate.index_plate_four .plate_box .application_info_box .application_info.display_b{
+  display: flex;
+}
+section .section_plate.index_plate_four .plate_box .application_info_box .application_info.display_n{
+  display: none;
+}
+
+
+/* 第五板块 */
+section .section_plate.index_plate_fives{
+
+}
+section .section_plate.index_plate_fives .plate_box{
+  max-width: 1220px;
+  margin: 0 auto;
+  border:1px solid rgba(112,112,112,.1);
+  font-family:Segoe UI, PingFangSC-Regular, sans-serif;
+}
+section .section_plate.index_plate_fives .plate_box .news_list{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box{
+  max-width: 340px;
+  height: 440px;
+  padding: 30px 0;
+  transition: all .3s;
+  overflow: hidden;
+}
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box:not(:last-child){
+  margin-right: 10px;
+}
+
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box .news_box_img{
+  width: 100%;
+  height: 200px;
+  margin-bottom: 30px;
+  transition: unset;
+}
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box .news_box_img>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box .news_box_title{
+  font-size:17px;
+  font-weight:bold;
+  color:rgba(59,59,59,1);
+  margin-bottom: 23px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box .news_box_message{
+  font-size:14px;
+  font-weight:400;
+  color:rgba(112,112,112,1);
+  margin-bottom: 30px;
+  text-align: justify;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  min-height: 57px;
+}
+
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box .news_box_time{
+  font-size:14px;
+  font-weight:400;
+  color:rgba(238,238,238,1);
+  display: none;
+}
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box .news_box_btn{
+  font-size:14px;
+  font-weight:400;
+  color:rgba(112,112,112,1);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box:hover{
+  background:rgba(9,80,169,1);
+  box-shadow:0 6px 11px rgba(0,0,0,0.26);
+  padding: 64px 25px 54px;
+}
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box:hover .news_box_img{
+  display: none;
+}
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box:hover .news_box_title{
+  font-size:18px;
+  font-weight:bold;
+  color:rgba(236,236,236,1);
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  min-height: 48px;
+}
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box:hover .news_box_message{
+  font-size:14px;
+  font-weight:400;
+  color:rgba(238,238,238,1);
+  margin-bottom: 58px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  min-height: 76px;
+}
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box:hover .news_box_time{
+  display: block;
+  font-size:14px;
+  font-weight:400;
+  color:rgba(238,238,238,1);
+  margin-bottom: 60px;
+}
+
+section .section_plate.index_plate_fives .plate_box .news_list .news_list_box:hover .news_box_btn{
+  font-size:14px;
+  font-weight:400;
+  width:140px;
+  height:32px;
+  color:rgba(255,255,255,1);
+  border:1px solid rgba(255,255,255,1);
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+
+
+
 /* 第六板块 */
-section .index_plate.index_plate_six{
+section .section_plate.index_plate_six{
   background:rgba(231,240,245,1);
   padding-bottom: calc(106px - 53px);
 }
-section .index_plate.index_plate_six .plate_box{
-  width: 1044px;
+section .section_plate.index_plate_six .plate_box{
+  max-width: 1044px;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   align-content: center;
 }
-section .index_plate.index_plate_six .plate_box .plate_six_box{
+section .section_plate.index_plate_six .plate_box .plate_six_box{
   box-sizing: border-box;
   flex: 0 0 20%;
   text-align: center;
   margin-bottom: 53px;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
-section .index_plate.index_plate_six .plate_box .plate_six_box .icon{
+section .section_plate.index_plate_six .plate_box .plate_six_box .icon{
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 66px;
   height: 66px;
+  position: relative;
 }
-section .index_plate.index_plate_six .plate_box .plate_six_box .icon>img{
+section .section_plate.index_plate_six .plate_box .plate_six_box .icon>img{
   width: 100%;
   height: 100%;
   object-fit: contain;
+  position: absolute;
+  transition: all .3s;
 }
-section .index_plate.index_plate_six .plate_box .plate_six_box>p{
+section .section_plate.index_plate_six .plate_box .plate_six_box .icon>img:first-child{
+  opacity: 1;
+}
+section .section_plate.index_plate_six .plate_box .plate_six_box .icon>img:last-child{
+  opacity: 0;
+}
+section .section_plate.index_plate_six .plate_box .plate_six_box>p{
   max-width: 130px;
   margin: 0 auto;
   font-size:14px;
   font-weight:400;
   color:rgba(112,112,112,1);
+}
+
+section .section_plate.index_plate_six .plate_box .plate_six_box:hover .icon>img:first-child{
+  opacity: 0;
+}
+section .section_plate.index_plate_six .plate_box .plate_six_box:hover .icon>img:last-child{
+  opacity: 1;
 }

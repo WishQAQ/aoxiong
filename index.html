@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>傲雄</title>
-  <link rel="stylesheet" type="text/css" href="style/common.css">
-  <link rel="stylesheet" type="text/css" href="style/index.css">
+  <link rel="stylesheet" type="text/css" href="style/common.css">  <!-- 公用样式 -->
+  <link rel="stylesheet" type="text/css" href="style/bannerCarousel.css">  <!-- 轮播banner样式 -->
+  <link rel="stylesheet" type="text/css" href="style/index.css">  <!-- 页面样式 -->
+  <link rel="stylesheet" type="text/css" href="style/swiper.min.css">
+  <script src="js/publicJs.js"></script>
 </head>
 <body>
-<header>
+<header class="header">
   <div class="header_box">
     <div class="nav_logo">
       <div class="logo"></div>
@@ -15,8 +18,8 @@
     </div>
 
     <nav class="nav">
-      <nav-item>首页</nav-item>
-      <nav-item>产品服务</nav-item>
+      <nav-item><a href="index.html">首页</a></nav-item>
+      <nav-item><a href="productService.html">产品服务</a></nav-item>
       <nav-item>解决方案</nav-item>
       <nav-item>关于我们</nav-item>
       <nav-item>开放平台</nav-item>
@@ -30,12 +33,74 @@
 <section>
 
   <banner>
+    <div class="banner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide_list">
+            <div class="banner_background">
+              <img src="images/index_banner.png" alt="">
+            </div>
+            <div class="banner_message">
+              <div class="banner_message_text">
+                <div>让笔迹成为每个人的数字化身份</div>
+                <p>i-Signing 电子签名平台</p>
+              </div>
 
+              <div class="banner_message_btn">
+                <div class="login">注册使用</div>
+                <div class="contact">合作咨询</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide_list">
+            <div class="banner_background">
+              <img src="images/index_banner.png" alt="">
+            </div>
+            <div class="banner_message">
+              <div class="banner_message_text">
+                <div>让笔迹成为每个人的数字化身份</div>
+                <p>i-Signing 电子签名平台</p>
+              </div>
+
+              <div class="banner_message_btn">
+                <div class="login">注册使用</div>
+                <div class="contact">合作咨询</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide_list">
+            <div class="banner_background">
+              <img src="images/index_banner.png" alt="">
+            </div>
+            <div class="banner_message">
+              <div class="banner_message_text">
+                <div>让笔迹成为每个人的数字化身份</div>
+                <p>i-Signing 电子签名平台</p>
+              </div>
+
+              <div class="banner_message_btn">
+                <div class="login">注册使用</div>
+                <div class="contact">合作咨询</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-pagination"></div>
+    </div>
 
   </banner>
 
   <!-- 第一板块 可靠的电子签名平台-->
-  <div class="index_plate index_plate_one">
+  <div class="section_plate index_plate_one">
     <div class="plate_title">
       <p>可靠的电子签名平台</p>
       <span>开创生物特征身份识别新模式</span>
@@ -45,12 +110,14 @@
       <div class="index_hover_box">
         <div class="icon">
           <img src="images/index_plate_1.png" alt="">
+          <img src="images/index_plate_1_hover.png" alt="">
         </div>
         <p>生物特征</p>
         <span>神经网络特征</span>
       </div>
       <div class="index_hover_box">
         <div class="icon">
+          <img src="images/index_plate_2.png" alt="">
           <img src="images/index_plate_2_hover.png" alt="">
         </div>
         <p>电子签名</p>
@@ -59,6 +126,7 @@
       <div class="index_hover_box">
         <div class="icon">
           <img src="images/index_plate_3.png" alt="">
+          <img src="images/index_plate_3_hover.png" alt="">
         </div>
         <p>身份识别</p>
         <span>准确率达到可靠级别</span>
@@ -66,6 +134,7 @@
       <div class="index_hover_box">
         <div class="icon">
           <img src="images/index_plate_4.png" alt="">
+          <img src="images/index_plate_4_hover.png" alt="">
         </div>
         <p>最新模式</p>
         <span>随时、随地、随心</span>
@@ -76,7 +145,7 @@
   </div>
 
   <!-- 第二板块 核心技术-->
-  <div class="index_plate index_plate_two">
+  <div class="section_plate index_plate_two">
     <div class="plate_title">
       <p>核心技术</p>
       <span>专业的技术支持团队</span>
@@ -115,43 +184,225 @@
   </div>
 
   <!-- 第三板块 产品生态-->
-  <div class="index_plate index_plate_three">
+  <div class="section_plate index_plate_three">
     <div class="plate_title">
       <p>产品生态</p>
       <span>丰富的产品生态链</span>
     </div>
 
     <div class="plate_box">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide_list">
+              <div class="item_image"><img src="images/index_plate_three_1.png" alt=""></div>
+              <div class="item_message">
+                <div class="item_title">原笔迹电子签名平台</div>
+                <div class="item_text">
+                  作为人工智能云服务的开拓者，我们率先将先进的人工智能核心技术通过互联网云服务对外提供.
+                  作为中文语音产业的引领者，我们主导编制《中文语音识别、合成互联网服务接口规范》等国家标准.
+                </div>
+
+                <div class="item_btn">Learn more</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide_list">
+              <div class="item_image"><img src="images/index_plate_three_1.png" alt=""></div>
+              <div class="item_message">
+                <div class="item_title">原笔迹电子签名平台2</div>
+                <div class="item_text">
+                  作为人工智能云服务的开拓者，我们率先将先进的人工智能核心技术通过互联网云服务对外提供.
+                  作为中文语音产业的引领者，我们主导编制《中文语音识别、合成互联网服务接口规范》等国家标准.
+                </div>
+
+                <div class="item_btn">Learn more</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide_list">
+              <div class="item_image"><img src="images/index_plate_three_1.png" alt=""></div>
+              <div class="item_message">
+                <div class="item_title">原笔迹电子签名平台3</div>
+                <div class="item_text">
+                  作为人工智能云服务的开拓者，我们率先将先进的人工智能核心技术通过互联网云服务对外提供.
+                  作为中文语音产业的引领者，我们主导编制《中文语音识别、合成互联网服务接口规范》等国家标准.
+                </div>
+
+                <div class="item_btn">Learn more</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
 
     </div>
   </div>
 
   <!-- 第四板块 行业应用-->
-  <div class="index_plate index_plate_four">
+  <div class="section_plate index_plate_four">
     <div class="plate_title">
       <p>行业应用</p>
       <span>丰富的解决方案</span>
     </div>
 
     <div class="plate_box">
+      <div class="application_btn_box" id="application_nav">
+        <div class="application_btn btn_checked">
+          <div class="info_icon">
+            <img src="images/index_application_btn_1.png" alt="">
+            <img src="images/index_application_btn_1_hover.png" alt="">
+          </div>
+          <div class="info_title">工程建设</div>
+        </div>
+        <div class="application_btn">
+          <div class="info_icon">
+            <img src="images/index_application_btn_2.png" alt="">
+            <img src="images/index_application_btn_2_hover.png" alt="">
+          </div>
+          <div class="info_title">智慧交管</div>
+        </div>
+        <div class="application_btn">
+          <div class="info_icon">
+            <img src="images/index_application_btn_3.png" alt="">
+            <img src="images/index_application_btn_3_hover.png" alt="">
+          </div>
+          <div class="info_title">银行金融</div>
+        </div>
+        <div class="application_btn">
+          <div class="info_icon">
+            <img src="images/index_application_btn_2.png" alt="">
+            <img src="images/index_application_btn_2_hover.png" alt="">
+          </div>
+          <div class="info_title">数字驾考</div>
+        </div>
+        <div class="application_btn">
+          <div class="info_icon">
+            <img src="images/index_application_btn_3.png" alt="">
+            <img src="images/index_application_btn_3_hover.png" alt="">
+          </div>
+          <div class="info_title">银行金融</div>
+        </div>
+        <div class="application_btn">
+          <div class="info_icon">
+            <img src="images/index_application_btn_5.png" alt="">
+            <img src="images/index_application_btn_5_hover.png" alt="">
+          </div>
+          <div class="info_title">智慧交管</div>
+        </div>
+<!--        <div class="slider"></div>-->
+      </div>
+
+
+      <div class="application_info_box">
+        <div class="application_info">
+          <div class="info_image">
+            <img src="images/index_application_info_1.png" alt="">
+          </div>
+          <div class="info_message">
+            <div class="info_message_title">驾考全程数字化解决方案</div>
+            <div class="info_message_text">
+              随着人们生活水平的进步，中国的机动车保有量近年来持续攀升，机动车数量的增加给社会带来一系列问题，如道路行驶安全、非机动车和行人安全、重大事故、环境保护等问题。机动车驾驶人的驾驶水平和素质，对整个社会和人民群众的日常生活有着十分重要和越来越明显的影响。所以机动车驾驶人的考试，意义十分重大，是一个学员成为合格驾驶员的重要关口，保证考试的纪律严格性，公平性，公开性至关重要。一套高清的，数字化，系统化的视频监控系统，逐渐成为每个机动车驾驶考试中心必备的系统和设施。
+            </div>
+          </div>
+        </div>
+        <div class="application_info display_n">
+          <div class="info_image">
+            <img src="" alt="">
+          </div>
+          <div class="info_message">
+            <div class="info_message_title">智慧交管</div>
+            <div class="info_message_text"></div>
+          </div>
+        </div>
+        <div class="application_info display_n">
+          <div class="info_image">
+            <img src="" alt="">
+          </div>
+          <div class="info_message">
+            <div class="info_message_title">银行金融</div>
+            <div class="info_message_text"></div>
+          </div>
+        </div>
+        <div class="application_info display_n">
+          <div class="info_image">
+            <img src="" alt="">
+          </div>
+          <div class="info_message">
+            <div class="info_message_title">数字驾考</div>
+            <div class="info_message_text"></div>
+          </div>
+        </div>
+        <div class="application_info display_n">
+          <div class="info_image">
+            <img src="" alt="">
+          </div>
+          <div class="info_message">
+            <div class="info_message_title">银行金融</div>
+            <div class="info_message_text"></div>
+          </div>
+        </div>
+        <div class="application_info display_n">
+          <div class="info_image">
+            <img src="" alt="">
+          </div>
+          <div class="info_message">
+            <div class="info_message_title">智慧交管</div>
+            <div class="info_message_text"></div>
+          </div>
+        </div>
+      </div>
 
     </div>
   </div>
 
   <!-- 第五板块 新闻中心-->
-  <div class="index_plate index_plate_fives">
+  <div class="section_plate index_plate_fives">
     <div class="plate_title">
       <p>新闻中心</p>
       <span>查看更多</span>
     </div>
 
     <div class="plate_box">
+      <div class="news_list">
+        <div class="news_list_box">
+          <div class="news_box_img"><img src="images/index_news_1.png" alt=""></div>
+          <div class="news_box_title">重磅！最高法发布全球首部互联网司法白皮书</div>
+          <div class="news_box_message">12月4日，最高人民法院发布《中国法院的互联网司法》白皮书同步发布互联网司法典型案例。这是中国法院发布的首部互联网司法白皮书。</div>
+          <div class="news_box_time">2019-02-04</div>
+          <div class="news_box_btn">查看详情</div>
+        </div>
+
+        <div class="news_list_box">
+          <div class="news_box_img"><img src="images/index_news_1.png" alt=""></div>
+          <div class="news_box_title">重磅！最高法发布全球首部互联网司法白皮书</div>
+          <div class="news_box_message">12月4日，最高人民法院发布《中国法院的互联网司法》白皮书同步发布互联网司法典型案例。这是中国法院发布的首部互联网司法白皮书。</div>
+          <div class="news_box_time">2019-02-04</div>
+          <div class="news_box_btn">查看详情</div>
+        </div>
+
+        <div class="news_list_box">
+          <div class="news_box_img"><img src="images/index_news_1.png" alt=""></div>
+          <div class="news_box_title">重磅！最高法发布全球首部互联网司法白皮书</div>
+          <div class="news_box_message">12月4日，最高人民法院发布《中国法院的互联网司法》白皮书同步发布互联网司法典型案例。这是中国法院发布的首部互联网司法白皮书。</div>
+          <div class="news_box_time">2019-02-04</div>
+          <div class="news_box_btn">查看详情</div>
+        </div>
+      </div>
 
     </div>
   </div>
 
   <!-- 第六板块 合作伙伴-->
-  <div class="index_plate index_plate_six">
+  <div class="section_plate index_plate_six">
     <div class="plate_title">
       <p>合作伙伴</p>
       <span>我们的合作公司</span>
@@ -161,84 +412,98 @@
       <div class="plate_six_box">
         <div class="icon">
           <img src="images/index_plate_six_1.png" alt="">
+          <img src="images/index_plate_six_1_hover.png" alt="">
         </div>
         <p>电子科技大学</p>
       </div>
       <div class="plate_six_box">
         <div class="icon">
           <img src="images/index_plate_six_2.png" alt="">
+          <img src="images/index_plate_six_2_hover.png" alt="">
         </div>
         <p>中国刑事经观察学院</p>
       </div>
       <div class="plate_six_box">
         <div class="icon">
           <img src="images/index_plate_six_3.png" alt="">
+          <img src="images/index_plate_six_3_hover.png" alt="">
         </div>
         <p>西南政法大学司法鉴定中心（国家级）</p>
       </div>
       <div class="plate_six_box">
         <div class="icon">
           <img src="images/index_plate_six_4.png" alt="">
+          <img src="images/index_plate_six_4_hover.png" alt="">
         </div>
         <p>重庆大学</p>
       </div>
       <div class="plate_six_box">
         <div class="icon">
           <img src="images/index_plate_six_5.png" alt="">
+          <img src="images/index_plate_six_5_hover.png" alt="">
         </div>
         <p>重庆邮电大学</p>
       </div>
       <div class="plate_six_box">
         <div class="icon">
-          <img src="images/index_plate_six_6.png" alt="">
+          <img src="images/index_plate_six_3.png" alt="">
+          <img src="images/index_plate_six_3_hover.png" alt="">
         </div>
         <p>重庆市高校物证技术工程研究中心</p>
       </div>
       <div class="plate_six_box">
         <div class="icon">
           <img src="images/index_plate_six_7.png" alt="">
+          <img src="images/index_plate_six_7_hover.png" alt="">
         </div>
         <p>重庆市公安局</p>
       </div>
       <div class="plate_six_box">
         <div class="icon">
           <img src="images/index_plate_six_8.png" alt="">
+          <img src="images/index_plate_six_8_hover.png" alt="">
         </div>
         <p>重庆市高级人民法院</p>
       </div>
       <div class="plate_six_box">
         <div class="icon">
           <img src="images/index_plate_six_9.png" alt="">
+          <img src="images/index_plate_six_9_hover.png" alt="">
         </div>
         <p>重庆市司法局</p>
       </div>
       <div class="plate_six_box">
         <div class="icon">
           <img src="images/index_plate_six_10.png" alt="">
+          <img src="images/index_plate_six_10_hover.png" alt="">
         </div>
         <p>重庆市人民检察院</p>
       </div>
       <div class="plate_six_box">
         <div class="icon">
           <img src="images/index_plate_six_11.png" alt="">
+          <img src="images/index_plate_six_11_hover.png" alt="">
         </div>
         <p>公安部交通管理科学研究所</p>
       </div>
       <div class="plate_six_box">
         <div class="icon">
           <img src="images/index_plate_six_12.png" alt="">
+          <img src="images/index_plate_six_12_hover.png" alt="">
         </div>
         <p>上海磐度信息科技有限公司</p>
       </div>
       <div class="plate_six_box">
         <div class="icon">
           <img src="images/index_plate_six_13.png" alt="">
+          <img src="images/index_plate_six_13_hover.png" alt="">
         </div>
         <p>重庆市两江公证处</p>
       </div>
       <div class="plate_six_box">
         <div class="icon">
           <img src="images/index_plate_six_14.png" alt="">
+          <img src="images/index_plate_six_14_hover.png" alt="">
         </div>
         <p>浙江省杭州市杭州互联网公证处</p>
       </div>
@@ -314,7 +579,50 @@
   </div>
 </footer>
 
-
-
 </body>
+
+<script src="js/swiper.min.js"></script>
+<script src="js/bannerCarousel.js"></script>
+<script src="js/tab.js"></script>
+
+<script>
+  /**
+   * @Description: 产品生态轮播
+   * @author Wish
+   * @date 2020/1/2
+   */
+  const swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+
+
+  // /**
+  //  * @Description: 行业应用滑块
+  //  * @author Wish
+  //  * @date 2020/1/3
+  //  */
+  // const oDiv = document.querySelector("#application_nav"),
+  //     oLi = oDiv.querySelectorAll(".application_btn"),
+  //     oLiActive = document.querySelector(".application_btn.btn_checked")
+  // console.log(oLiActive);
+  // oSlider = document.querySelector(".slider");
+  // console.log(oLi);
+  // oDiv.addEventListener("mouseleave",function () {
+  //   oSlider.style.transform='translate3d('+oLiActive.offsetLeft+'px,0,0)';
+  // })
+  // for(let i=0; i<oLi.length; i++){
+  //   console.log(i+':'+oLi[i].nextElementSibling.offsetLeft);
+  //   oLi[i].index=i;
+  //   oLi[i].addEventListener("mouseenter",function (e) {
+  //     oSlider.style.transform='translate3d('+oLi[i].offsetLeft+'px,0,0)';
+  //   })
+  // }
+</script>
+
 </html>
